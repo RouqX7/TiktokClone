@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginVertical="16dp"
+    android:layout_marginHorizontal="32dp"
+    tools:context=".Views.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hellotext"
+        android:orientation="vertical"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Sign up for Tiktok "
+            android:gravity="center_horizontal"
+            android:id="@+id/signUpText"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUpText"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create a profile,follow other accounts,make your own videos, and more?"
+            android:textColor="#AFAFAF" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/form_layout"
+        android:layout_below="@+id/signUpText"
+        android:layout_marginVertical="32dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_sign_up_with_google"
+            style="@style/GoogleButton"
+            app:cornerRadius="0dp"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            app:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            app:background="@drawable/rounded_corner"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sign Up with Google" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_sign_up_with_email"
+            style="@style/GoogleButton"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="Sign Up with Email"
+            android:textColor="@color/black"
+            app:background="@drawable/rounded_corner"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_sign_up_with_phone"
+            style="@style/GoogleButton"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="Sign Up with Phone"
+            android:textColor="@color/black"
+            app:background="@drawable/rounded_corner"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="0dp" />
+
+
+
+        <ProgressBar
+            android:layout_width="24dp"
+            android:layout_height="64dp"
+            android:id="@+id/progress_bar"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:layout_below="@+id/form_layout"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/create_account_text_view_btn"
+            android:text="Log In" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
